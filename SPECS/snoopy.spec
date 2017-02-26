@@ -1,5 +1,5 @@
 Name:		snoopy
-Version:	2.4.5
+Version:	2.4.6
 Release:	1%{dist}
 Summary:	User monitoring and command logging
 Group:		Applications/Monitoring
@@ -41,6 +41,9 @@ rm -rf %{buildroot}
 %{_sbindir}/%{name}-*
 
 %changelog
+* Sun Feb 26 2017 Taylor Kimball <taylor@linuxhq.org> - 2.4.6-1
+- Updated to version 2.4.6.
+
 * Thu Apr 21 2016 Taylor Kimball <taylor@linuxhq.org> - 2.4.5-1 
 - Updated to version 2.4.5.
 
