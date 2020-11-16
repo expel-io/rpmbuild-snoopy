@@ -5,7 +5,7 @@ Summary:	User monitoring and command logging
 Group:		Applications/Monitoring
 License:	GPL
 URL:		https://github.com/a2o/%{name}
-Source0:	http://source.a2o.si/download/%{name}/%{name}-%{version}.tar.gz
+Source0:	%{URL}/releases/download/%{name}-%{version}/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  autoconf, automake, git, gcc, libtool, make, socat
 
