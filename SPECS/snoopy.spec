@@ -1,11 +1,11 @@
 Name:		snoopy
-Version:	2.4.6
-Release:	1%{dist}
+Version:	2.4.9
+Release:	1%{?dist}
 Summary:	User monitoring and command logging
 Group:		Applications/Monitoring
 License:	GPL
 URL:		https://github.com/a2o/%{name}
-Source0:	http://source.a2o.si/download/%{name}/%{name}-%{version}.tar.gz
+Source0:	%{URL}/releases/download/%{name}-%{version}/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  autoconf, automake, git, gcc, libtool, make, socat
 
@@ -41,6 +41,9 @@ rm -rf %{buildroot}
 %{_sbindir}/%{name}-*
 
 %changelog
+* Mon Nov 16 2020 Christian Birk <mail@birkc.de> - 2.4.9-1
+- Update to 2.4.9
+
 * Sun Feb 26 2017 Taylor Kimball <taylor@linuxhq.org> - 2.4.6-1
 - Updated to version 2.4.6.
 
