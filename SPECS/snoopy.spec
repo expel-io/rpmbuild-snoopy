@@ -1,5 +1,5 @@
 Name:		snoopy
-Version:	2.4.9
+Version:	2.4.10
 Release:	1%{?dist}
 Summary:	User monitoring and command logging
 Group:		Applications/Monitoring
@@ -41,6 +41,9 @@ rm -rf %{buildroot}
 %{_sbindir}/%{name}-*
 
 %changelog
+* Tue Dec  1 2020 Christian Birk <mail@birkc.de> - 2.4.10-1
+- Update to 2.4.10
+
 * Mon Nov 16 2020 Christian Birk <mail@birkc.de> - 2.4.9-1
 - Update to 2.4.9
 
