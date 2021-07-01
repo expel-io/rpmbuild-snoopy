@@ -6,7 +6,7 @@ Create a snoopy RPM for RHEL/CentOS.
 
 To download package sources and install build dependencies
 
-    yum -y install rpmdevtools yum-utils
+    yum -y install rpmdevtools yum-utils git
 
 ## Build process
 

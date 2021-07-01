@@ -1,11 +1,12 @@
 Name:		snoopy
-Version:	2.4.10
+Version:	2.4.14
 Release:	1%{?dist}
 Summary:	User monitoring and command logging
 Group:		Applications/Monitoring
 License:	GPL
 URL:		https://github.com/a2o/%{name}
-Source0:	%{URL}/releases/download/%{name}-%{version}/%{name}-%{version}.tar.gz
+Source0:	%{url}/releases/download/%{name}-%{version}/%{name}-%{version}.tar.gz
+#Source0:	https://github.com/a2o/snoopy/releases/download/snoopy-2.4.14/snoopy-2.4.14.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  autoconf, automake, git, gcc, libtool, make, socat
 
@@ -33,7 +34,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %doc ChangeLog COPYING README.md contrib
-%doc doc/*.md doc/internals/*.md
+%doc doc/*.md
 %config(noreplace) %{_sysconfdir}/ld.so.preload
 %config(noreplace) %{_sysconfdir}/%{name}.ini
 %{_bindir}/%{name}-*
